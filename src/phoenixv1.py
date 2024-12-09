@@ -4,15 +4,22 @@ from rich.console import Console
 from rich.prompt import Prompt
 from rich.panel import Panel
 from rich.box import Box, DOUBLE, ROUNDED, HEAVY, SIMPLE
-from speechcopy import transcribe_audio, speak
-from realtime import real_time_transcription_with_silence_detection
+from speech.speech_v1_local_whisper import transcribe_audio, speak
+# from realtime import real_time_transcription_with_silence_detection
+# from realtimecopy import real_time_transcription_with_threads
+from speech.stt_groq_whisper import real_time_transcription_with_threads
+from speech.wake_word_detection import detect_wake_word
+import time
+import webbrowser
+from dotenv import load_dotenv
+import os
 
 
 console = Console()
 
 def get_weather(city_name: str) -> str:
     """Gets the weather for a given city with improved error handling."""
-    api_key = "enter weather api"  # **REPLACE!**
+    api_key = os.getenv("weather_api_key")  # **REPLACE!**
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = f"{base_url}appid={api_key}&q={city_name}&units=metric"
 
@@ -54,13 +61,15 @@ def order_food(food : str,city :str) -> str:
     if select == 1:
         print(f"Ordering {food} from zomato")
         print(f"Click on the link below \n https://www.zomato.com/{city}/delivery/dish-{food} ")
+        webbrowser.open("https://www.zomato.com/{city}/delivery/dish-{food}")
+    
     else:
         print(f"Ordering {food} from swiggy")   
 
 
 def internet_search(search :str) -> str:
     print("Browsing through Google Search !")
-    api_key = "enter api"
+    api_key = os.getenv("google_search_api_key")
     complete_url = "https://www.googleapis.com/customsearch/v1?key="+api_key+f"&cx=017576662512468239146:omuauf_lfve&q={search}"
     response = requests.get(complete_url)
     response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
@@ -136,7 +145,7 @@ def cal(eventname: str, date: str, start_time: str = None, end_time: str = None,
 
 
 
-genai.configure(api_key="enter api") # Replace with your Google Generative AI key
+genai.configure(api_key=os.getenv("gemini_api1_key")) # Replace with your Google Generative AI key
 
 generation_config = {  # You can adjust these parameters
     "temperature": 0.2,
@@ -145,26 +154,24 @@ generation_config = {  # You can adjust these parameters
     "max_output_tokens": 2048,
 }
 
-with open("phoenix.txt", "r", encoding="utf-8") as f:
-    instruction = f.read()
+# with open("phoenix.txt", "r", encoding="utf-8") as f:
+#     instruction = f.read()
 
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     generation_config=generation_config,
-    system_instruction=instruction,
+    # system_instruction=instruction,
     tools=[get_weather, turn_on_lights, order_food, internet_search, cal]
 )
 
 
 chat = model.start_chat(history=[],enable_automatic_function_calling=True)
-speak("Yes Harshal Boss, How may I help you !")
+speak("Hey Boss, How may I help you !")
 
 while True:
-    user_input =  transcribe_audio()
+    user_input =  real_time_transcription_with_threads()
     console.print(Panel(f"User said: {user_input}", style="bold blue", box=SIMPLE))
     response = chat.send_message(user_input)
     console.print(Panel(response.text, style="bold green", box=SIMPLE))
-    if transcribe_audio() == "okay":
-        user_input = transcribe_audio()
-    else:
-        speak(response.text)
+    # speak(response.text)
+    time.sleep(9)
