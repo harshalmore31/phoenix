@@ -7,7 +7,7 @@ def check_my_screen():
     # Capture screenshot of current window
     screenshot = ImageGrab.grab()
     img = screenshot
-    img.save('image.jpg')
+    img.save(r'src\backendimage.jpg')
 
     genai.configure(api_key="AIzaSyDkfYex8fyClLkv33P4JXgoCmurwYX4-aY")
 
@@ -28,4 +28,5 @@ def check_my_screen():
     chat_session = model.start_chat(history=[])
     response = chat_session.send_message(["describe image", img])
     fresp = response.text
+    print(fresp)
     return fresp

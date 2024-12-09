@@ -16,6 +16,7 @@ from functions.calendar import cal
 from functions.docs import write_in_document
 from text_to_speech.elevenlabs_stream import spk
 from functions.summary import sum
+from functions.cms import check_my_screen
 import os
 from dotenv import load_dotenv
 import keyboard
@@ -37,14 +38,14 @@ generation_config = {  # You can adjust these parameters
     "max_output_tokens": 2048,
 }
 
-with open(r"C:\Github\phoenix\phoenix\src\phoenix.txt", "r", encoding="utf-8") as f:
-    instruction = f.read()
+# with open(r"C:\Github\phoenix\phoenix\src\phoenix.txt", "r", encoding="utf-8") as f:
+#     instruction = f.read()
 
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     generation_config=generation_config,
-    system_instruction=instruction,
-    tools=[get_weather, turn_on_lights, order_food, internet_search, cal, write_in_document, research]
+    # system_instruction=instruction,
+    tools=[get_weather, turn_on_lights, order_food, internet_search, cal, write_in_document, research, check_my_screen]
 )
 
 chat = model.start_chat(history=[],enable_automatic_function_calling=True)
