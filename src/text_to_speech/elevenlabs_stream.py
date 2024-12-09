@@ -1,11 +1,14 @@
 from elevenlabs.client import ElevenLabs
 from elevenlabs import stream
 from elevenlabs import Voice, VoiceSettings, play
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def spk(txt):
     client = ElevenLabs(
-    api_key="sk_47011ebb91913053956986afc19fcfb623696109ef8bc019",
+    api_key=os.getenv("eleven_labs_api"),
     )
 
     audio_stream = client.generate(
