@@ -68,9 +68,13 @@ def record_audio(frames, stream, silence_event):
 
 
 def save_and_transcribe(frames, p):
-    # Save the audio in the current directory
+    # Save the audio in the specified directory
+    directory = os.path.join(os.getcwd(), "src", "backend")
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    
     file_name = "recorded_audio.wav"
-    file_path = os.path.join(os.getcwd(), file_name)
+    file_path = os.path.join(directory, file_name)
     
     wf = wave.open(file_path, "wb")
     wf.setnchannels(CHANNELS)
