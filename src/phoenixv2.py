@@ -71,8 +71,8 @@ def sum(fresponse):
     speak(sresponse.text)
 
 console.print(Panel("Do you want Voice OR Chat, Say Yes for Voice !"))
-option = real_time_transcription_with_threads()
-if option == "Yes" or "Yes." or "yes" or "yes.":
+option = input("Enter Y/N : ")
+if option == "Y" or "y":
     while True:
         if detect_wake_word(custom_ppn_path,access_key) == True:
             user_input = real_time_transcription_with_threads()

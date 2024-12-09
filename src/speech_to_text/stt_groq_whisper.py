@@ -95,7 +95,7 @@ def save_and_transcribe(frames, p):
     # Save the audio in the current directory
     start_time = time.time()  # Start timer for saving audio
     file_name = "recorded_audio.wav"
-    file_path = os.path.join(os.getcwd(), file_name)
+    file_path = os.path.join("src", "backend", file_name)
     
     wf = wave.open(file_path, "wb")
     wf.setnchannels(CHANNELS)
