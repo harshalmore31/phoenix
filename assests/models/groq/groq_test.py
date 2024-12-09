@@ -2,7 +2,7 @@ import os
 import groq
 from dotenv import load_dotenv
 # from realtimecopy import real_time_transcription_with_threads
-from speech.stt_groq_whisper import real_time_transcription_with_threads
+from src.functions.stt_groq_whisper import real_time_transcription_with_threads
 # set the module stt_groq_whisper properly
 load_dotenv()
 
