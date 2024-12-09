@@ -7,7 +7,7 @@ from markdown import markdown
 load_dotenv()
 
 # Configure Google Generative AI
-genai.configure(api_key=os.getenv("gemini_api1_key"))
+genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Create the model
 generation_config = {
@@ -28,7 +28,7 @@ chat_session = model.start_chat(history=[])
 # NVIDIA API Client
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key=os.getenv("nvidia_api_key"),
+    api_key="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",
 )
 
 while True:

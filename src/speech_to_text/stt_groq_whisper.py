@@ -1,12 +1,29 @@
+import time  # Importing time module for tracking execution time
 import pyaudio
 import wave
 import os
 import numpy as np
 import threading
 import groq
+import pyttsx3
 from dotenv import load_dotenv
 
 load_dotenv()
+
+def speak(text):
+    engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    
+    # Select the female voice (Microsoft Zira)
+    for voice in voices:
+        if "Zira" in voice.name:
+            engine.setProperty('voice', voice.id)
+            break
+    else:
+        print("Female voice not found. Using default voice.")
+    
+    engine.say(text)
+    engine.runAndWait()
 
 # Groq API Config
 client = groq.Client(api_key=os.environ["GROQ_API_KEY"])
@@ -20,11 +37,12 @@ FORMAT = pyaudio.paInt16  # 16-bit audio format
 CHANNELS = 1  # Mono audio
 RATE = 44100  # Sample rate
 THRESHOLD = 500  # Silence threshold (amplitude)
-SILENCE_DURATION = 3  # Seconds of silence to stop recording
+SILENCE_DURATION = 2.7  # Seconds of silence to stop recording
 
 
 # Function to send audio file to Groq API
 def transcribe_audio(file_path):
+    start_time = time.time()  # Start timer
     try:
         with open(file_path, "rb") as audio_file:
             transcription = client.audio.transcriptions.create(
@@ -40,13 +58,17 @@ def transcribe_audio(file_path):
     except Exception as e:
         print(f"Error: {str(e)}")
         return f"Error: {str(e)}"
+    finally:
+        end_time = time.time()  # End timer
+        # print(f"Time for transcription: {end_time - start_time:.2f} seconds")
 
 
 # Real-time recording with silence detection
 def record_audio(frames, stream, silence_event):
+    start_time = time.time()  # Start timer for recording
     silent_chunks = 0  # Counter for silent chunks
     print("Listening... Speak into the microphone.")
-    print("Stop speaking to trigger transcription.")
+    # print("Stop speaking to trigger transcription.")
     
     while not silence_event.is_set():
         data = stream.read(CHUNK)
@@ -65,16 +87,15 @@ def record_audio(frames, stream, silence_event):
         if silent_chunks > (SILENCE_DURATION * RATE / CHUNK):
             print("Silence detected. Transcribing...")
             silence_event.set()
+    end_time = time.time()  # End timer for recording
+    # print(f"Time for recording: {end_time - start_time:.2f} seconds")
 
 
 def save_and_transcribe(frames, p):
-    # Save the audio in the specified directory
-    directory = os.path.join(os.getcwd(), "src", "backend")
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    
+    # Save the audio in the current directory
+    start_time = time.time()  # Start timer for saving audio
     file_name = "recorded_audio.wav"
-    file_path = os.path.join(directory, file_name)
+    file_path = os.path.join(os.getcwd(), file_name)
     
     wf = wave.open(file_path, "wb")
     wf.setnchannels(CHANNELS)
@@ -82,12 +103,11 @@ def save_and_transcribe(frames, p):
     wf.setframerate(RATE)
     wf.writeframes(b"".join(frames))
     wf.close()
+    end_time = time.time()  # End timer for saving audio
+    # print(f"Time for saving audio: {end_time - start_time:.2f} seconds")
 
     # Send the audio to Groq API
-    transcription = transcribe_audio(file_path)
-    # Uncomment the next line to delete the audio file after transcription
-    # os.remove(file_path)
-    return transcription
+    return transcribe_audio(file_path)
 
 
 def real_time_transcription_with_threads():
@@ -121,6 +141,4 @@ def real_time_transcription_with_threads():
         stream.close()
         p.terminate()
 
-
-# Run the transcription with silence detection using multi-threading
 # real_time_transcription_with_threads()

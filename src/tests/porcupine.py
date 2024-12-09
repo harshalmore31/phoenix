@@ -1,3 +1,4 @@
+import time  # Importing time module for tracking execution time
 import pvporcupine
 import sounddevice as sd
 import numpy as np
@@ -23,16 +24,21 @@ def audio_callback(indata, frames, time, status):
 # Corrected path with raw string or double backslashes
 custom_ppn_path = r"assests\wake_word_detect\Phoenix_en_windows_v3_0_0.ppn"
 
-# Initialize Porcupine
+# Initialize Porcupine and track initialization time
+start_init_time = time.time()
 porcupine = pvporcupine.create(
     access_key=os.getenv("picovoice_api_key"),  # Replace with your Picovoice Access Key
     keyword_paths=[custom_ppn_path]
 )
+end_init_time = time.time()
+print(f"Porcupine initialization time: {end_init_time - start_init_time:.2f} seconds")
 
 # Flag to control the audio stream loop
 detected = False
 
 try:
+    # Start listening and track listening duration
+    start_listen_time = time.time()
     with sd.InputStream(
         samplerate=porcupine.sample_rate,
         channels=1,
@@ -43,6 +49,8 @@ try:
         print("Listening for the wake word...")
         while not detected:
             pass  # Keep the stream running until wake word is detected
+    end_listen_time = time.time()
+    print(f"Time spent listening for wake word: {end_listen_time - start_listen_time:.2f} seconds")
 finally:
     porcupine.delete()
     print("Wake word detected. Stopping...")
