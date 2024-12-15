@@ -5,6 +5,8 @@ To make an AI assistant which is similar to the JARVIS we saw in the IRON MAN mo
 
  I am thinking of solving my problems and others problem when they came across using an AI Chat-bot, wether its the Chat-GPT or Google gemini, Phoenix is made to be SMART such that It will get your work done, it maybe not good at coding or performing some tasks, but it will smart help, guide and assist you how to do the task and how to get it done more efficiently, It will ensure that you won't face the frustration like sometimes, we don't get the results we want, we have to go this website that to get our things done, Phoenix will automate the things for you, and It will try to simply the problems and help you solve them effectively 
 
+Project aims to solve problems Faced with current LLM's and also automating some things that are too hectic to do !
+Like the thing to do research, mostly people use perplexity, google etc, here the research thing will be done by Phoenix itself and it will present and document it 
 
  ## Phoenix_v1
 
@@ -18,3 +20,7 @@ To make an AI assistant which is similar to the JARVIS we saw in the IRON MAN mo
  - Issue 3 : it was about, stopping the recording when the user stops speaking, the issue was it wasn't feeling like a conversation, everytime when you stop speaking you have to press the 'q' keyword to stop ( i specified the q keyword ), it seems too manul human work
 
  2. Problem I think, we can utilize the function calling property of the LLM model, for many cases we can automate things 
+
+ 3. Implementing screen capture to make the LLM model know what I am working on !
+
+ 4. There are more features to go !......

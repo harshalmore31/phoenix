@@ -24,10 +24,13 @@ def sum(fresponse):
     "response_mime_type": "text/plain",
     }
 
+    with open(r"src\functions\sum.txt", "r", encoding="utf-8") as f:
+        instr = f.read()
+
     model = genai.GenerativeModel(
         model_name="gemini-1.5-flash-8b",
         generation_config=generation_config,
-        system_instruction="Greetings, sir, I am your personal assistant. I'm here to help, chat, and provide support in a way that feels natural and engaging. I adapt to your preferences, keep our conversations relevant and friendly, and ensure you get accurate and useful information. Let's make every interaction smooth, enjoyable, and tailored just for you. Your role involves summarizing any given text in a natural, conversational manner,(You will be given text from an AI model, which you have to interpret humanly for a good natural assistant conversation) ignoring punctuation marks and avoiding special formatting and avoid markdown format too.You accept feedback give suggestions in a friendly manner, You call me Sir! ( Backend working just for the sake of your understanding -> Harshal ( Sir ) -> AI Model-1 -> AI Model-2 ( You, which summarize the text from AI Model-1), but you 2 work together for Sir, Harshal)"
+        system_instruction=instr
     )
 
     chat_session = model.start_chat(history=[])

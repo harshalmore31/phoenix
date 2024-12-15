@@ -10,13 +10,16 @@ import time
 from functions.weather import get_weather
 from functions.lights import turn_on_lights
 from functions.food import order_food
-from functions.search import internet_search
+# from functions.search import internet_search
+from functions.jina import search
 from functions.rag import knowledge_retreival
-from functions.calendar import cal
+from functions.my_calendar import cal
 from functions.docs import write_in_document
 from text_to_speech.elevenlabs_stream import spk
 from functions.summary import sum
 from functions.cms import check_my_screen
+from functions.code import write_code
+from functions.krya import todo
 import os
 from dotenv import load_dotenv
 import keyboard
@@ -42,17 +45,17 @@ generation_config = {  # You can adjust these parameters
 #     instruction = f.read()
 
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-2.0-flash-exp",
     generation_config=generation_config,
     # system_instruction=instruction,
-    tools=[get_weather, turn_on_lights, order_food, internet_search, cal, write_in_document, research, check_my_screen]
+    tools=[get_weather, turn_on_lights, order_food, search, cal, write_in_document, research, check_my_screen, write_code, todo]
 )
 
 chat = model.start_chat(history=[],enable_automatic_function_calling=True)
 
 console.print(Panel("Do you want Voice OR Chat, Say Yes for Voice !"))
 option = input("Enter Y/N : ")
-if option == "Y" or "y":
+if option == "Y" or option == "y":
     while True:
         if detect_wake_word(custom_ppn_path,access_key) == True:
             user_input = real_time_transcription_with_threads()
