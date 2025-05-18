@@ -1,0 +1,19 @@
+{
+  "url": "https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html",
+  "unique_key": "https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html",
+  "method": "GET",
+  "headers": {},
+  "payload": null,
+  "user_data": {
+    "__crawlee": {
+      "state": 3
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html",
+  "handled_at": "2024-12-30 06:14:18.699227+00:00",
+  "id": "IeWDnht7WGg0THH",
+  "json_": "{\n  \"url\": \"https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html\",\n  \"unique_key\": \"https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"payload\": null,\n  \"user_data\": {\n    \"__crawlee\": {\n      \"state\": 3\n    }\n  },\n  \"retry_count\": 0,\n  \"no_retry\": false,\n  \"loaded_url\": \"https://elections.maryland.gov/elections/2024/primary_results/gen_results_2024_2.html\",\n  \"handled_at\": \"2024-12-30 06:14:18.699227+00:00\",\n  \"id\": \"IeWDnht7WGg0THH\",\n  \"order_no\": null\n}",
+  "order_no": null
+}

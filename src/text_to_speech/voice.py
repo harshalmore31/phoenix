@@ -3,7 +3,7 @@ from elevenlabs.client import ElevenLabs
 
 def spk(txt):
     client = ElevenLabs(
-    api_key="sk_47011ebb91913053956986afc19fcfb623696109ef8bc019", # Defaults to ELEVEN_API_KEY
+    api_key="x", # Defaults to ELEVEN_API_KEY
     )
 
     # audio = client.generate(

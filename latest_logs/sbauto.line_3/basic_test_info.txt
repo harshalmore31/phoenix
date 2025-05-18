@@ -1,0 +1,24 @@
+sbauto.py:3:SB
+--------------------------------------------------------------------
+Last Page: https://www.google.com/search?q=ChatGPT+site%3Aopenai.com&sca_esv=c2e426814f4d07e9&source=hp&ei=_-tkZ7OpFZ64vr0Pto3I8QM&iflsig=AL9hbdgAAAAAZ2T6Dw1kWmJvb9RIsl1sUZsBEV2-Q1Hk&ved=0ahUKEwjzpKSQu7WKAxUenK8BHbYGMj4Q4dUDCBA&uact=5&oq=ChatGPT+site%3Aopenai.com&gs_lp=Egdnd3Mtd2l6IhdDaGF0R1BUIHNpdGU6b3BlbmFpLmNvbUhLUABYInAAeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgCgAgCYAwCSBwCgBwA&sclient=gws-wiz
+ Duration: 10.69s
+  Browser: Chrome 131.0.6778.205
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1734667272  (Unix Timestamp)
+     Date: Friday, 20 December 2024
+     Time: 9:31:12 AM  (India Standard Time, UTC+05:30)
+--------------------------------------------------------------------
+Traceback:
+  Traceback (most recent call last):
+  File "c:\Github\phoenix\phoenix\assests\sbauto.py", line 6, in <module>
+    sb.click('a:contains("ChatGPT - OpenAI")')
+  File "C:\Users\harsh\AppData\Roaming\Python\Python312\site-packages\seleniumbase\fixtures\base_case.py", line 417, in click
+    element = page_actions.wait_for_element_visible(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\harsh\AppData\Roaming\Python\Python312\site-packages\seleniumbase\fixtures\page_actions.py", line 514, in wait_for_element_visible
+    timeout_exception(NoSuchElementException, message)
+  File "C:\Users\harsh\AppData\Roaming\Python\Python312\site-packages\seleniumbase\fixtures\page_actions.py", line 267, in timeout_exception
+    raise exc(msg)
+seleniumbase.common.exceptions.NoSuchElementException: Message: 
+ Element {a:contains("ChatGPT - OpenAI")} was not present after 7 seconds!
+

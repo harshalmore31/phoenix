@@ -1,0 +1,19 @@
+{
+  "url": "https://www.archives.gov/electoral-college/2024",
+  "unique_key": "https://www.archives.gov/electoral-college/2024",
+  "method": "GET",
+  "headers": {},
+  "payload": null,
+  "user_data": {
+    "__crawlee": {
+      "state": 3
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.archives.gov/electoral-college/2024",
+  "handled_at": "2024-12-30 06:14:07.197675+00:00",
+  "id": "9auy6Sb58D7fnKn",
+  "json_": "{\n  \"url\": \"https://www.archives.gov/electoral-college/2024\",\n  \"unique_key\": \"https://www.archives.gov/electoral-college/2024\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"payload\": null,\n  \"user_data\": {\n    \"__crawlee\": {\n      \"state\": 3\n    }\n  },\n  \"retry_count\": 0,\n  \"no_retry\": false,\n  \"loaded_url\": \"https://www.archives.gov/electoral-college/2024\",\n  \"handled_at\": \"2024-12-30 06:14:07.197675+00:00\",\n  \"id\": \"9auy6Sb58D7fnKn\",\n  \"order_no\": null\n}",
+  "order_no": null
+}

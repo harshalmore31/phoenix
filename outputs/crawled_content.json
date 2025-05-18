@@ -1,0 +1,111 @@
+[
+    {
+        "url": "https://community.openai.com/t/introduction-to-deep-research-from-openai-livestream/1110988",
+        "crawl": {
+            "loadedUrl": "https://community.openai.com/t/introduction-to-deep-research-from-openai-livestream/1110988",
+            "loadedTime": "2025-02-05T18:28:44.876Z",
+            "referrerUrl": "https://community.openai.com/t/introduction-to-deep-research-from-openai-livestream/1110988",
+            "depth": 0,
+            "httpStatusCode": 200
+        },
+        "metadata": {
+            "canonicalUrl": "https://community.openai.com/t/introduction-to-deep-research-from-openai-livestream/1110988",
+            "title": "Introduction to Deep Research from OpenAI [LIVESTREAM] - Community - OpenAI Developer Community",
+            "description": "Begins at 9am JST / 4pm PT \nJoin Mark Chen, Josh Tobin, Neel Ajjarapu, and Isa Fulford from Tokyo as they introduce and demo deep research.",
+            "author": null,
+            "keywords": null,
+            "languageCode": "en",
+            "openGraph": [
+                {
+                    "property": "og:site_name",
+                    "content": "OpenAI Developer Community"
+                },
+                {
+                    "property": "og:type",
+                    "content": "website"
+                },
+                {
+                    "property": "og:image",
+                    "content": "https://us1.discourse-cdn.com/openai1/optimized/4X/e/3/d/e3d3b99d59c8200e309209b6988ba6c20022c98f_2_1024x576.jpeg"
+                },
+                {
+                    "property": "og:url",
+                    "content": "https://community.openai.com/t/introduction-to-deep-research-from-openai-livestream/1110988"
+                },
+                {
+                    "property": "og:title",
+                    "content": "Introduction to Deep Research from OpenAI [LIVESTREAM] - Community - OpenAI Developer Community"
+                },
+                {
+                    "property": "og:description",
+                    "content": "Begins at 9am JST / 4pm PT  Join Mark Chen, Josh Tobin, Neel Ajjarapu, and Isa Fulford from Tokyo as they introduce and demo deep research."
+                },
+                {
+                    "property": "og:article:section",
+                    "content": "Community"
+                },
+                {
+                    "property": "og:article:section:color",
+                    "content": "F4AC36"
+                },
+                {
+                    "property": "og:article:tag",
+                    "content": "api"
+                },
+                {
+                    "property": "article:published_time",
+                    "content": "2025-02-02T23:33:16+00:00"
+                },
+                {
+                    "property": "og:ignore_canonical",
+                    "content": "true"
+                }
+            ],
+            "jsonLd": [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "QAPage",
+                    "name": "Introduction to Deep Research from OpenAI [LIVESTREAM]",
+                    "mainEntity": {
+                        "@type": "Question",
+                        "name": "Introduction to Deep Research from OpenAI [LIVESTREAM]",
+                        "text": "<a href=\"https://www.youtube.com/watch?v=jv-lpIsnLOo\" target=\"_blank\" class=\"video-thumbnail\" rel=\"noopener\">\n\n[Introduction to Deep Research]\n\n</a>\n\nBegins at 9am JST / 4pm PT\n\nJoin Mark Chen, Josh Tobin, Neel Ajjarapu, and Isa Fulford from Tokyo as they introduce and demo deep research.",
+                        "upvoteCount": 9,
+                        "answerCount": 0,
+                        "datePublished": "2025-02-02T23:33:16.756Z",
+                        "author": {
+                            "@type": "Person",
+                            "name": "PaulBellow",
+                            "url": "https://community.openai.com/u/PaulBellow"
+                        }
+                    }
+                }
+            ],
+            "headers": {
+                "server": "nginx",
+                "date": "Wed, 05 Feb 2025 18:28:30 GMT",
+                "content-type": "text/html; charset=utf-8",
+                "x-frame-options": "SAMEORIGIN",
+                "x-xss-protection": "0",
+                "x-content-type-options": "nosniff",
+                "x-permitted-cross-domain-policies": "none",
+                "referrer-policy": "strict-origin-when-cross-origin",
+                "x-discourse-route": "topics/show",
+                "cross-origin-opener-policy": "same-origin-allow-popups",
+                "vary": "Accept-Encoding, Accept",
+                "cache-control": "no-cache, no-store",
+                "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-WEysDlAZhpS6pXpktnoRmiQZc' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
+                "x-discourse-cached": "skip",
+                "x-request-id": "fc5d8fbf-f4bd-47ed-a7dd-7d2fffa9e765",
+                "x-discourse-trackview": "1",
+                "content-encoding": "gzip",
+                "strict-transport-security": "max-age=31536000",
+                "cdck-proxy-id": "app-router-tiehunter03.sea2, app-balancer-tieinterceptor1b.sea2",
+                "x-firefox-spdy": "h2"
+            }
+        },
+        "screenshotUrl": null,
+        "text": "Introduction to Deep Research from OpenAI [LIVESTREAM] - Community\nHuh. Fascinating. This essentially seems to be the consumer’s first taste of adding test-time compute to their problems. Which I do like.\nThere’s a bunch of projects I’d love to try this on to assess its validity and usefulness.\nI still don’t like the fact it’s locked under a $200 per month price tag until they decide to let it trickle down to us poors, but aw well I guess.\nI’m getting worried OAI is going to soon add a $2000 per month subscription after they release o3 regular and then add the new and novel features/models to that subscription after they’re done with the $200 per month one.\nI guess all we can do is see what people post about using these new agentic systems and hope for the best.\nwoo.\nI’m a Pro subscriber and don’t see the Deep Research option in my account yet. Is this slowly rolling out to people or has something else gone astray? Keen to try it out. I’m in Australia.\nAlso not seeing it yet in the States. Presumably a gradual rollout, but I hope to see it soon.\nIt landed sometime in the night/morning for me in the US. It’s absolutely amazing! Feels like that OMG-moment when first trying intelligent LLMs.\nI also dont see it, keen to use it ASAP \nAs a GPT-pro user from Australia, I’m getting concerned that I keep hearing about all these new features that are “available to pro users” that I don’t see. Operator and now Deep Research are no-where to be seen and we’re paying the same as everyone else.\n100% there is so much searching Operator could be doing for me that takes up so much of my day",
+        "markdown": "# Introduction to Deep Research from OpenAI \\[LIVESTREAM\\] - Community\n\nHuh. Fascinating. This essentially seems to be the consumer’s first taste of adding test-time compute to their problems. Which I do like.\n\nThere’s a bunch of projects I’d love to try this on to assess its validity and usefulness.\n\nI still don’t like the fact it’s locked under a $200 per month price tag until they decide to let it trickle down to us poors, but aw well I guess.\n\nI’m getting worried OAI is going to soon add a $2000 per month subscription after they release o3 regular and then add the new and novel features/models to _that_ subscription after they’re done with the $200 per month one.\n\nI guess all we can do is see what people post about using these new agentic systems and hope for the best.\n\nwoo.\n\nI’m a Pro subscriber and don’t see the Deep Research option in my account yet. Is this slowly rolling out to people or has something else gone astray? Keen to try it out. I’m in Australia.\n\nAlso not seeing it yet in the States. Presumably a gradual rollout, but I hope to see it soon.\n\nIt landed sometime in the night/morning for me in the US. It’s absolutely amazing! Feels like that OMG-moment when first trying intelligent LLMs.\n\nI also dont see it, keen to use it ASAP ![:frowning:](https://emoji.discourse-cdn.com/twitter/frowning.png?v=12 \":frowning:\")\n\nAs a GPT-pro user from Australia, I’m getting concerned that I keep hearing about all these new features that are “available to pro users” that I don’t see. Operator and now Deep Research are no-where to be seen and we’re paying the same as everyone else.\n\n100% there is so much searching Operator could be doing for me that takes up so much of my day"
+    }
+]

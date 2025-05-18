@@ -7,7 +7,7 @@ def duckduckgo_search(query):
     response.raise_for_status() # Raise an exception for bad status codes
     return response.json()
 
-results = duckduckgo_search("Python programming")
+results = duckduckgo_search("Best phone under 30k")
 print(results)
 
 

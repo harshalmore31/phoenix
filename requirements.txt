@@ -1,0 +1,2 @@
+# Add pywin32 for COM threading support
+pywin32>=306

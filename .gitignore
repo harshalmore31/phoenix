@@ -1,8 +1,8 @@
 .env
+archives
 assests/mpv/mpv.exe
 src/backend
 assests/mpv/mpv/mpv.exe
-archives/Qdrant-RAG-Evaluation-Guide-Best-Practices.pdf
 src/speech_to_text/__pycache__
 src/functions/__pycache__
 __pycache__/
@@ -11,3 +11,4 @@ __pycache__/
 
 # assests/crawlee/my-crawler/node_modules
 node_modules
+src/srcx

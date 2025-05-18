@@ -23,4 +23,10 @@ Like the thing to do research, mostly people use perplexity, google etc, here th
 
  3. Implementing screen capture to make the LLM model know what I am working on !
 
- 4. There are more features to go !......
+ 4. As gemini 2.0 can now process video, as free tier is about 15 min, 4M token/sec, we need to utilize it for more comphrensive screen reading
+
+ 5. use of crawlee and selenium base for interacting with web-browser
+
+ 6. write_string function with AI in it, like it will write the content where the cursor is pointing
+
+ 7. 

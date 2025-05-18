@@ -1,0 +1,12 @@
+sheet_name,timestamp,request_id,data,response
+knowledge_base,2025-01-13 22:30:18.650048,4e612529-8da4-452f-9af7-24a6fb91efa5,raspberry pi,[]
+knowledge_base,2025-01-13 22:31:16.124965,3ccb2665-6673-4045-a84b-8299b75cbdd1,list all raspi and their price,[]
+knowledge_base,2025-01-13 22:31:43.417432,5331400e-e41d-4dcb-a766-a515a86a860e,list all available products,[]
+knowledge_base,2025-01-13 22:32:10.366538,9dc64eff-3dc8-40ca-bff0-185c993a0643,4gb raspberry pi,[]
+knowledge_base,2025-01-13 22:32:36.078941,c3853bd2-8979-4349-ac2e-6bf29a0666a5,Raspberry Pi 5 4GB,[]
+ticket_management,2025-01-13 22:33:55.637059,77ea084a-97c3-4828-bc96-e770c63767b2,"{""customer_email"": ""raj@gmail.com"", ""issue_type"": ""Product Replacement"", ""priority"": ""High"", ""customer_id"": null}","{""error"": ""Customer ID not provided, please provide customer email""}"
+ticket_management,2025-01-13 22:34:16.438357,405d5ec6-3655-44e8-a831-5a554eacb4c3,"{""customer_email"": ""raj@gmail.com"", ""issue_type"": ""Product Replacement"", ""priority"": ""High"", ""customer_id"": ""345678""}","{""ticket_id"": 1}"
+knowledge_base,2025-01-13 22:36:08.279020,8483553a-5143-4335-81af-0a447eedd701,list all raspi and price,[]
+knowledge_base,2025-01-13 22:36:13.972192,482f8773-69dc-43a8-9665-fa6e3825ec73,list all raspberry pi products and their prices,[]
+knowledge_base,2025-01-13 22:36:19.576671,dafd6e4b-d54b-449f-b58b-a56518a89f65,list all Raspberry Pi products and their prices,[]
+ticket_management,2025-01-13 22:41:19.802589,6304c392-9677-4a78-b6c1-bcd5be2b78a0,"Order number 67889, Raspberry Pi 5 burnt out, requesting replacement.","{""error"": ""Invalid JSON format. Please provide a valid JSON string.""}"

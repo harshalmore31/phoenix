@@ -1,0 +1,19 @@
+{
+  "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election",
+  "unique_key": "https://en.wikipedia.org/wiki/2024_united_states_presidential_election",
+  "method": "GET",
+  "headers": {},
+  "payload": null,
+  "user_data": {
+    "__crawlee": {
+      "state": 3
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election",
+  "handled_at": "2024-12-30 06:14:03.360422+00:00",
+  "id": "OmoRWvJyV3ZgVIT",
+  "json_": "{\n  \"url\": \"https://en.wikipedia.org/wiki/2024_United_States_presidential_election\",\n  \"unique_key\": \"https://en.wikipedia.org/wiki/2024_united_states_presidential_election\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"payload\": null,\n  \"user_data\": {\n    \"__crawlee\": {\n      \"state\": 3\n    }\n  },\n  \"retry_count\": 0,\n  \"no_retry\": false,\n  \"loaded_url\": \"https://en.wikipedia.org/wiki/2024_United_States_presidential_election\",\n  \"handled_at\": \"2024-12-30 06:14:03.360422+00:00\",\n  \"id\": \"OmoRWvJyV3ZgVIT\",\n  \"order_no\": null\n}",
+  "order_no": null
+}

@@ -11,17 +11,17 @@ import webbrowser
 from functions.weather import get_weather
 from functions.lights import turn_on_lights
 from functions.food import order_food
-from functions.search import internet_search
+from functions.intersearch import internet_search
 from functions.rag import knowledge_retreival
 from functions.my_calendar import cal
 import threading
 
 custom_ppn_path = r"Versions\Phoenix\phoenix-v1\Phoenix_en_windows_v3_0_0.ppn"
-access_key = "49RT4geBg0wydV8MBk9dl1Iwnl1IJJBxzpuSFA+MRCqulS03cyKDWQ=="
+access_key = ""
 
 console = Console()
 
-genai.configure(api_key="AIzaSyBpg7qQxFRj8eAEGXZp5UOVj7l3VrxpCN0") # Replace with your Google Generative AI key
+genai.configure(api_key="") # Replace with your Google Generative AI key
 
 generation_config = {  # You can adjust these parameters
     "temperature": 0.2,

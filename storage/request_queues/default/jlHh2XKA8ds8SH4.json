@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sos.state.mn.us/elections-voting/election-results",
+  "unique_key": "https://www.sos.state.mn.us/elections-voting/election-results",
+  "method": "GET",
+  "headers": {},
+  "payload": null,
+  "user_data": {
+    "__crawlee": {
+      "state": 3
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.sos.state.mn.us/elections-voting/election-results",
+  "handled_at": "2024-12-30 06:14:05.917075+00:00",
+  "id": "jlHh2XKA8ds8SH4",
+  "json_": "{\n  \"url\": \"https://www.sos.state.mn.us/elections-voting/election-results\",\n  \"unique_key\": \"https://www.sos.state.mn.us/elections-voting/election-results\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"payload\": null,\n  \"user_data\": {\n    \"__crawlee\": {\n      \"state\": 3\n    }\n  },\n  \"retry_count\": 0,\n  \"no_retry\": false,\n  \"loaded_url\": \"https://www.sos.state.mn.us/elections-voting/election-results\",\n  \"handled_at\": \"2024-12-30 06:14:05.917075+00:00\",\n  \"id\": \"jlHh2XKA8ds8SH4\",\n  \"order_no\": null\n}",
+  "order_no": null
+}

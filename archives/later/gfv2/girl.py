@@ -5,7 +5,7 @@ from elevenlabs import Voice, VoiceSettings, play
 
 def spk(txt):
     client = ElevenLabs(
-    api_key="sk_3aa10f20ea04920a56a0e13930d09710ee22e24f568d946c",
+    api_key="sk_e50b16868713b6680edc29065247cb31d6bc0fd666018c38",
     )
 
     audio_stream = client.generate(

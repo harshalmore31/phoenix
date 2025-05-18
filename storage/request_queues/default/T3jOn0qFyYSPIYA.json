@@ -1,0 +1,19 @@
+{
+  "url": "http://www.co.burlington.nj.us/598/Election-Results",
+  "unique_key": "http://www.co.burlington.nj.us/598/election-results",
+  "method": "GET",
+  "headers": {},
+  "payload": null,
+  "user_data": {
+    "__crawlee": {
+      "state": 3
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "http://www.co.burlington.nj.us/598/Election-Results",
+  "handled_at": "2024-12-30 06:14:13.869350+00:00",
+  "id": "T3jOn0qFyYSPIYA",
+  "json_": "{\n  \"url\": \"http://www.co.burlington.nj.us/598/Election-Results\",\n  \"unique_key\": \"http://www.co.burlington.nj.us/598/election-results\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"payload\": null,\n  \"user_data\": {\n    \"__crawlee\": {\n      \"state\": 3\n    }\n  },\n  \"retry_count\": 0,\n  \"no_retry\": false,\n  \"loaded_url\": \"http://www.co.burlington.nj.us/598/Election-Results\",\n  \"handled_at\": \"2024-12-30 06:14:13.869350+00:00\",\n  \"id\": \"T3jOn0qFyYSPIYA\",\n  \"order_no\": null\n}",
+  "order_no": null
+}
